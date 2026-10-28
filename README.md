@@ -1,4 +1,4 @@
-# ZapGPT-Morph
+# GPT-Morph
 
 From a sentence to a verified, printable robot, in simulation. A small language model turns a free-text request into a
 design spec; one evolutionary search then finds the robot's body and its gait together; a rule written before the run

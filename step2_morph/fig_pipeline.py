@@ -199,7 +199,7 @@ def main():
     fig = plt.figure(figsize=(16, 15))
     gs = fig.add_gridspec(4, 3, height_ratios=[0.62, 0.42, 1.0, 1.0], width_ratios=[1.0, 1.9, 0.85],
                           hspace=0.28, wspace=0.12, left=0.02, right=0.985, top=0.965, bottom=0.02)
-    fig.suptitle("ZapGPT-Morph: from a sentence to a verified, printable robot", fontsize=16, weight="bold")
+    fig.suptitle("GPT-Morph: from language to a printable robot that moves", fontsize=16, weight="bold")
     panel_flow(fig.add_subplot(gs[0, :]))
 
     data = []

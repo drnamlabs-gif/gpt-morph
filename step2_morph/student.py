@@ -1,5 +1,5 @@
 # Dr. Nam H. Le. drnamlabs.com, bunnyquant.com
-"""ZapGPT student for step 2: sentence -> spec, trained, then tested on the same unseen sentences as the LLM.
+"""Embedding student for step 2: sentence -> spec, trained, then tested on the same unseen sentences as the LLM.
 
 frozen SBERT (all-MiniLM-L6-v2, 384-d) -> one shared MLP trunk -> two heads
   direction head: forward / backward / left / right / turn_left / turn_right / hop

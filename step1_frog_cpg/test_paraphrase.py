@@ -2,7 +2,7 @@
 """Unseen-paraphrase test for the step-1 prompt -> gait mapping.
 
 Training set = the 5 prompts in evolve.BEHAVIOURS and their evolved champions.
-Mapping (ZapGPT retrieval): frozen SBERT all-MiniLM-L6-v2 embeds the prompt,
+Mapping (embedding retrieval): frozen SBERT all-MiniLM-L6-v2 embeds the prompt,
 the nearest training prompt by cosine similarity picks the champion genome.
 The genome is then run in MuJoCo and the executed behaviour is read off the
 robot's motion, independently of the retrieval: each of the 5 metrics is

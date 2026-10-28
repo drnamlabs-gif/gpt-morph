@@ -1,0 +1,17 @@
+# Tested with Python 3.11 on Windows 11, one NVIDIA RTX 5090 (CUDA 12.8).
+# The evolution (MuJoCo) runs on CPU; the LoRA compiler and the VLM only need a GPU for training.
+numpy==2.3.3
+scipy==1.16.3
+matplotlib==3.10.7
+pillow==11.3.0
+imageio==2.37.3
+mujoco==3.4.0
+scikit-learn==1.7.2
+sentence-transformers==5.1.2
+peft==0.21.2
+accelerate==1.13.0
+safetensors==0.6.2
+# torch and transformers: the versions below were development builds; any recent
+# stable release with CUDA support should do (install torch from pytorch.org for your CUDA).
+torch>=2.8
+transformers>=4.56

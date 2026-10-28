@@ -72,6 +72,27 @@ the loop so labels come from physically verified specs is not done.
   Here the text sets the behaviour and the body constraints throughout, and the result is checked against the sentence.
   The module sizes and URDF conventions in `morph.py` follow its open-source release.
 
+## Setup
+
+```bash
+git clone https://github.com/drnamlabs-gif/gpt-morph.git
+cd gpt-morph
+git clone https://github.com/generalroboticslab/Text2Robot.git   # robot modules and the example URDF, kept at the repo root
+python -m venv .venv && source .venv/bin/activate                # or a conda env with Python 3.11
+pip install -r requirements.txt
+```
+
+- The evolution and the verification (`step2_morph/evolve_morph.py`, `verify.py`) run on CPU and need only MuJoCo.
+- The prompt compiler used to write specs and training paraphrases is a local model served by
+  [Ollama](https://ollama.com) at `http://localhost:11434` (`qwen3.6:latest`, see `compiler.py`). It is only needed to
+  regenerate `lora/train.jsonl` and the zero-shot baseline.
+- LoRA training (`lora_train.py`) needs a GPU; the adapter itself is not included, so run `lora_data.py` then
+  `lora_train.py` to reproduce it.
+- Text2Robot is distributed under its own licence; the version used here is commit `1203e87`.
+
+Scripts, roughly in order: `python step2_morph/lora_data.py`, `lora_train.py`, `lora_grade.py`, then `run_all.py` to evolve and verify
+the demo robots and `story.py` to render the clips.
+
 ## Layout
 
 - `step1_frog_cpg/`: a fixed frog body, a gait search, and the first paraphrase test.
@@ -79,4 +100,4 @@ the loop so labels come from physically verified specs is not done.
   (`evolve_morph.py`), verification (`verify.py`), prompts and checks (`*.json`), figures.
 - `media/`: compact clips of each run.
 
-The Text2Robot repository is not vendored; clone it next to this folder to rebuild the bodies.
+The Text2Robot repository is not vendored; clone it into the repo root as shown under Setup.

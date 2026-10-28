@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it."
+title: "GPT-Morph: from language to robot morphology that moves"
+type: software
+authors:
+  - family-names: Le
+    given-names: Nam H.
+    affiliation: "University of Vermont"
+    website: "https://drnamlabs.com"
+repository-code: "https://github.com/drnamlabs-gif/gpt-morph"
+date-released: "2026-10-28"

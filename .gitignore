@@ -5,13 +5,6 @@ NOTES_*.md
 PLAN.md
 step2_morph/slide_pipeline.py
 step2_morph/figs/slide_pipeline.*
-# not part of this release: other-simulator replays and probes
-spawn/
-spawn_isaac.py
-isaac_install.log
-step2_morph/isaac/
-step2_morph/isaac_*.py
-step2_morph/probe_*.py
 # weights, caches, heavy renders (compact clips are in media/)
 __pycache__/
 *.gif

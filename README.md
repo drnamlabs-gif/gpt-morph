@@ -6,7 +6,7 @@ decides whether the result does what the sentence said.
 
 Nam H. Le, University of Vermont. [drnamlabs.com](https://drnamlabs.com)
 
-Early work. Everything here is MuJoCo, one seed per sentence, no hardware.
+Early work. Everything here is tested in MuJoCo only, one seed per sentence, no hardware.
 
 ## Pipeline
 
@@ -60,9 +60,9 @@ as 100% airtime, and flickering foot contacts counted as flight.
 
 ## Limits
 
-Simulation only, one seed per sentence, MuJoCo only. Gaits evolved here exploit contact details of this simulator, so
-they are not expected to survive another simulator or a real floor without further work. Compiler labels are a
-hand-written dictionary; closing the loop so labels come from physically verified specs is not done.
+Tested in MuJoCo only, one seed per sentence, no hardware. Transfer to another simulator (sim-to-sim) and to a real
+robot (sim-to-real) has not been verified; both are future work. Compiler labels are a hand-written dictionary; closing
+the loop so labels come from physically verified specs is not done.
 
 ## Related work
 

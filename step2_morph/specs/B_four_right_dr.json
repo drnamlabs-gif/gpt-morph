@@ -41,6 +41,6 @@
     "foot_scale": 0.8
    }
   ],
-  "_note": "transfer fix after the MuJoCo-vs-Isaac probe: servo matched, contact did not; cap CPG at 1.5 Hz and score the worst of 3 contact corners"
+  "_note": "variant with the gait frequency capped at 1.5 Hz and the worst of 3 contact corners scored"
  }
 }

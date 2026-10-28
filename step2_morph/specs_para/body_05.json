@@ -1,0 +1,24 @@
+{
+ "name": "body_05",
+ "prompt": "a robot with three pairs of legs that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 6
+  }
+ ],
+ "reasoning": "The request specifies three pairs of legs (6 total) and a sideways walk to the right, which corresponds to negative dy displacement in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

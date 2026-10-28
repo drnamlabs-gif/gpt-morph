@@ -1,0 +1,16 @@
+{
+ "name": "L_turn_it",
+ "prompt": "un robot che gira su se stesso",
+ "compiler": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+ "behaviour": [
+  {
+   "descriptor": "yaw",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "travel",
+   "weight": -5.0
+  }
+ ],
+ "morphology": []
+}

@@ -1,0 +1,30 @@
+{
+ "name": "right_10",
+ "prompt": "robot bốn chân đi ngang sang bên phải",
+ "kind": "vietnamese",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies a four-legged robot moving sideways to the right, which corresponds to positive dy displacement and minimal forward dx or yaw.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

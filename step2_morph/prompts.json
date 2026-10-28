@@ -1,0 +1,18 @@
+{
+  "_note": "Fixed before compiling or evolving. A = behaviour only (body is free: what body does the behaviour select?). B = body words + behaviour words (does the robot satisfy both?).",
+  "A": {
+    "A_forward": "walk forward",
+    "A_backward": "walk backward",
+    "A_sideways": "walk sideways to the left",
+    "A_turn": "turn left on the spot",
+    "A_hop": "hop: keep all feet off the ground as much as possible"
+  },
+  "B": {
+    "B_six_forward": "a six-legged robot that walks forward",
+    "B_two_forward": "a two-legged robot that walks forward",
+    "B_longleg_hop": "a robot with long legs that hops",
+    "B_low_wide_turn": "a low robot with a wide body and short legs that turns left on the spot",
+    "B_four_right": "a four-legged robot that walks sideways to the right",
+    "B_tall_nohop": "a tall robot that walks forward without hopping"
+  }
+}

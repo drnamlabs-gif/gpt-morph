@@ -1,0 +1,28 @@
+{
+ "name": "body_11",
+ "prompt": "robot sáu chân đi ngang sang bên phải",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "abs_dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 6
+  }
+ ],
+ "reasoning": "The request specifies a six-legged robot ('sáu chân') and lateral movement to the right, which corresponds to negative dy in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

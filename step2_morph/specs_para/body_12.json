@@ -1,0 +1,28 @@
+{
+ "name": "body_12",
+ "prompt": "an eight-legged spider robot that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "abs_dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 8
+  }
+ ],
+ "reasoning": "The request specifies an eight-legged robot and a sideways walking motion to the right, which corresponds to positive dy displacement while minimizing forward movement and rotation.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

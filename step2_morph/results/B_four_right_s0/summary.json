@@ -1,0 +1,90 @@
+{
+ "spec": {
+  "name": "B_four_right",
+  "prompt": "a four-legged robot that walks sideways to the right",
+  "compiler": "qwen3.6:latest",
+  "behaviour": [
+   {
+    "descriptor": "dy",
+    "weight": -10.0
+   },
+   {
+    "descriptor": "dx",
+    "weight": 0.0
+   }
+  ],
+  "morphology": [
+   {
+    "descriptor": "n_legs",
+    "op": "==",
+    "value": 4
+   }
+  ],
+  "reasoning": "The request specifies a four-legged robot and requires sideways motion to the right, which corresponds to negative dy displacement in the defined coordinate system.",
+  "validation_errors": [],
+  "repair_attempts": []
+ },
+ "seed": 0,
+ "generations": 150,
+ "pop": 64,
+ "fitness": 20.19792930004836,
+ "behaviour_score": 20.19792930004836,
+ "violated": [],
+ "descriptors": {
+  "dx": -0.20392531008638837,
+  "dy": -2.019792930004836,
+  "yaw": -0.15700291264929067,
+  "airtime": 0.12933333333333333,
+  "belly_contact": 0.0,
+  "stand_z": 0.19076863871629976,
+  "z_mean": 0.18695944952205412,
+  "fallen_at": null,
+  "flipped_at": null,
+  "peak_joint_speed": 4.60687783115501,
+  "dx_2nd_half": -0.14047420905225116,
+  "dy_2nd_half": -1.0006704939700775,
+  "mass": 1.7745,
+  "n_legs": 4,
+  "n_joints": 8,
+  "torso_L": 0.3346304719624362,
+  "torso_W": 0.24,
+  "mean_leg_len": 0.160697781061348,
+  "max_leg_len": 0.21309029557770842,
+  "axis_frac": {
+   "y": 0.0,
+   "x": 1.0,
+   "z": 0.0
+  }
+ },
+ "body": {
+  "L": 0.3346304719624362,
+  "W": 0.24,
+  "n_pairs": 2,
+  "pairs": [
+   {
+    "n_seg": 2,
+    "len": [
+     0.05799836797932213,
+     0.050306898565665434
+    ],
+    "axis": [
+     "x",
+     "x"
+    ]
+   },
+   {
+    "n_seg": 2,
+    "len": [
+     0.10659997619938136,
+     0.10649031937832706
+    ],
+    "axis": [
+     "x",
+     "x"
+    ]
+   }
+  ]
+ },
+ "evaluations": 9600,
+ "wall_clock_s": 187.05086827278137
+}

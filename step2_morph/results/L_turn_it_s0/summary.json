@@ -1,0 +1,83 @@
+{
+ "spec": {
+  "name": "L_turn_it",
+  "prompt": "un robot che gira su se stesso",
+  "compiler": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+  "behaviour": [
+   {
+    "descriptor": "yaw",
+    "weight": 10.0
+   },
+   {
+    "descriptor": "travel",
+    "weight": -5.0
+   }
+  ],
+  "morphology": []
+ },
+ "seed": 0,
+ "generations": 150,
+ "pop": 64,
+ "fitness": 112.68564790475956,
+ "behaviour_score": 112.68564790475956,
+ "violated": [],
+ "descriptors": {
+  "dx": 0.032662110386176446,
+  "dy": 0.00925348066607478,
+  "yaw": 11.28553859646722,
+  "airtime": 0.03244444444444444,
+  "belly_contact": 0.0,
+  "stand_z": 0.28458378962261355,
+  "z_mean": 0.2698403404866844,
+  "fallen_at": null,
+  "flipped_at": null,
+  "peak_joint_speed": 3.8226452324616016,
+  "dx_2nd_half": 0.020440842148328933,
+  "dy_2nd_half": 0.030297726190108308,
+  "mass": 1.7952,
+  "n_legs": 4,
+  "n_joints": 10,
+  "torso_L": 0.278366910298685,
+  "torso_W": 0.18911911965839664,
+  "mean_leg_len": 0.24246378918381636,
+  "max_leg_len": 0.2514729913796945,
+  "axis_frac": {
+   "y": 0.2,
+   "x": 0.4,
+   "z": 0.4
+  }
+ },
+ "body": {
+  "L": 0.278366910298685,
+  "W": 0.18911911965839664,
+  "n_pairs": 2,
+  "pairs": [
+   {
+    "n_seg": 2,
+    "len": [
+     0.08935376511792953,
+     0.14410082187000872
+    ],
+    "axis": [
+     "z",
+     "x"
+    ]
+   },
+   {
+    "n_seg": 3,
+    "len": [
+     0.07757907506427139,
+     0.059730466655857906,
+     0.11416344965956521
+    ],
+    "axis": [
+     "x",
+     "y",
+     "z"
+    ]
+   }
+  ]
+ },
+ "evaluations": 9600,
+ "wall_clock_s": 160.6795139312744
+}

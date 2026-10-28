@@ -1,0 +1,10 @@
+{
+ "L_six_forward": "a six-legged robot that walks forward",
+ "L_four_right": "a four-legged robot that walks sideways to the right",
+ "L_turn_en": "a robot that turns on the spot",
+ "L_turn_fr": "un robot qui tourne sur place",
+ "L_turn_it": "un robot che gira su se stesso",
+ "L_hop_en": "a long-legged robot that hops",
+ "L_hop_fr": "un robot aux longues jambes qui saute",
+ "L_hop_it": "un robot con le gambe lunghe che salta"
+}

@@ -1,0 +1,30 @@
+{
+ "name": "B_tall_nohop",
+ "prompt": "a tall robot that walks forward without hopping",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dx",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "airtime",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "mean_leg_len",
+   "op": ">=",
+   "value": 0.35
+  },
+  {
+   "descriptor": "max_leg_len",
+   "op": ">=",
+   "value": 0.4
+  }
+ ],
+ "reasoning": "High mean and max leg lengths ensure a tall stature, while negative airtime weight penalizes hopping to enforce walking.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

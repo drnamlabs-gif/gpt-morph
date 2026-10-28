@@ -1,0 +1,18 @@
+{
+ "name": "L_hop_fr",
+ "prompt": "un robot aux longues jambes qui saute",
+ "compiler": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+ "behaviour": [
+  {
+   "descriptor": "airtime",
+   "weight": 10.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "mean_leg_len",
+   "op": ">=",
+   "value": 0.35
+  }
+ ]
+}

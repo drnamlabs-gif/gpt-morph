@@ -1,0 +1,15 @@
+{
+ "name": "A_forward",
+ "prompt": "walk forward",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dx",
+   "weight": 10.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "The request specifies forward locomotion, so the optimizer should maximize displacement along the robot's forward axis.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

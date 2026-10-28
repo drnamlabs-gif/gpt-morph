@@ -1,0 +1,19 @@
+{
+ "name": "A_backward",
+ "prompt": "walk backward",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dx",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "travel",
+   "weight": 5.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "To maximize the objective, we penalize forward displacement (negative weight on dx) while rewarding total distance traveled to ensure the robot moves significantly backward.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

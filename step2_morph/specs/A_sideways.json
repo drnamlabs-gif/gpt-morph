@@ -1,0 +1,23 @@
+{
+ "name": "A_sideways",
+ "prompt": "walk sideways to the left",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "travel",
+   "weight": 2.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "The request specifies lateral movement to the left, so I maximize dy (leftward displacement) and penalize dx (forward/backward motion) to ensure pure sideways walking.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

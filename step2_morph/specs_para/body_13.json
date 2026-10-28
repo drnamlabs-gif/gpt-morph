@@ -1,0 +1,24 @@
+{
+ "name": "body_13",
+ "prompt": "a three-legged robot that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 3
+  }
+ ],
+ "reasoning": "The request specifies a three-legged robot and sideways motion to the right, which corresponds to negative dy displacement.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

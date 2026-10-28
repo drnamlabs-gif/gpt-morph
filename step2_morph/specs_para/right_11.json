@@ -1,0 +1,26 @@
+{
+ "name": "right_11",
+ "prompt": "un robot à quatre pattes qui marche de côté vers la droite",
+ "kind": "french",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies a four-legged robot ('quatre pattes') and penalizes forward movement to encourage sideways walking ('marche de côté'), while the direction 'right' is handled by the optimizer's search space rather than a fixed weight.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

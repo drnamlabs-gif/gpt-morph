@@ -1,0 +1,18 @@
+{
+ "name": "L_four_right",
+ "prompt": "a four-legged robot that walks sideways to the right",
+ "compiler": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4.0
+  }
+ ]
+}

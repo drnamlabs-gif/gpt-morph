@@ -1,0 +1,32 @@
+{
+ "evals_per_behaviour": 9600,
+ "steps_per_eval": 3000,
+ "wall": {
+  "forward": 136,
+  "backward": 135,
+  "sideways": 131,
+  "turn_left": 139,
+  "hop": 137
+ },
+ "own_best": {
+  "forward": 1,
+  "backward": 1,
+  "sideways": 1,
+  "turn_left": 1,
+  "hop": 1
+ },
+ "peak_speed": {
+  "forward": 4.391524556556025,
+  "backward": 4.650350676902019,
+  "sideways": 4.2495118360859925,
+  "turn_left": 4.2829630224987225,
+  "hop": 4.667374235138004
+ },
+ "overspeed": {
+  "forward": 0.0,
+  "backward": 0.0,
+  "sideways": 0.0,
+  "turn_left": 0.0,
+  "hop": 0.0
+ }
+}

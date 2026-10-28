@@ -1,0 +1,79 @@
+{
+ "spec": {
+  "name": "A_backward",
+  "prompt": "walk backward",
+  "compiler": "qwen3.6:latest",
+  "behaviour": [
+   {
+    "descriptor": "dx",
+    "weight": -10.0
+   },
+   {
+    "descriptor": "travel",
+    "weight": 5.0
+   }
+  ],
+  "morphology": [],
+  "reasoning": "To maximize the objective, we penalize forward displacement (negative weight on dx) while rewarding total distance traveled to ensure the robot moves significantly backward.",
+  "validation_errors": [],
+  "repair_attempts": []
+ },
+ "seed": 1,
+ "generations": 200,
+ "pop": 64,
+ "fitness": 73.27686042841847,
+ "behaviour_score": 73.27686042841847,
+ "violated": [],
+ "descriptors": {
+  "dx": -4.883047605074237,
+  "dy": -0.24672748574527786,
+  "yaw": -0.13596686491900734,
+  "airtime": 0.09127272727272727,
+  "belly_contact": 0.0,
+  "stand_z": 0.11612298125734598,
+  "z_mean": 0.11114887889708304,
+  "flipped_at": null,
+  "peak_joint_speed": 8.643316870708762,
+  "mass": 1.2964,
+  "n_legs": 4,
+  "n_joints": 6,
+  "torso_L": 0.34,
+  "torso_W": 0.11,
+  "mean_leg_len": 0.07547535083040226,
+  "max_leg_len": 0.10095070166080451,
+  "axis_frac": {
+   "y": 1.0,
+   "x": 0.0,
+   "z": 0.0
+  }
+ },
+ "body": {
+  "L": 0.34,
+  "W": 0.11,
+  "n_pairs": 2,
+  "pairs": [
+   {
+    "n_seg": 1,
+    "len": [
+     0.05
+    ],
+    "axis": [
+     "y"
+    ]
+   },
+   {
+    "n_seg": 2,
+    "len": [
+     0.05090991356858706,
+     0.05004078809221745
+    ],
+    "axis": [
+     "y",
+     "y"
+    ]
+   }
+  ]
+ },
+ "evaluations": 12800,
+ "wall_clock_s": 152.44389176368713
+}

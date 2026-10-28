@@ -1,0 +1,33 @@
+{
+ "name": "body_09",
+ "prompt": "a low, flat robot with short stubby legs that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "abs_dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "yaw",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "torso_L",
+   "op": "<=",
+   "value": 0.14
+  },
+  {
+   "descriptor": "mean_leg_len",
+   "op": "<=",
+   "value": 0.15
+  }
+ ],
+ "reasoning": "The request specifies a low, flat robot with short legs and sideways motion to the right, which corresponds to maximizing leftward displacement (negative dy) while minimizing forward movement and rotation.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

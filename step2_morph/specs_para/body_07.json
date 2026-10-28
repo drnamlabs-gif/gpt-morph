@@ -1,0 +1,18 @@
+{
+ "name": "body_07",
+ "prompt": "walk sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 1.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "The request specifies a sideways walk to the right, which corresponds to negative dy displacement in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

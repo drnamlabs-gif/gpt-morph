@@ -1,0 +1,22 @@
+  [A_backward s0] gen 149 best   9.493 mean   6.755 legs 2 joints 6 leg 0.45  191s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_backward_s0
+  [A_backward s1] gen 149 best  12.854 mean   7.587 legs 2 joints 6 leg 0.45  191s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_backward_s1
+  [A_backward s2] gen 149 best  12.193 mean   4.994 legs 2 joints 6 leg 0.45  196s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_backward_s2
+  [A_forward s0] gen 149 best   6.276 mean   2.663 legs 2 joints 6 leg 0.45  183s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_forward_s0
+  [A_forward s1] gen 149 best   5.405 mean   3.877 legs 2 joints 6 leg 0.45  187s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_forward_s1
+  [A_forward s2] gen 149 best  14.796 mean   4.082 legs 6 joints 10 leg 0.20  192s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_forward_s2
+  [A_hop s0] gen 149 best   8.000 mean   3.292 legs 4 joints 8 leg 0.19  108s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_hop_s0
+  [A_hop s1] gen 149 best   8.000 mean   4.480 legs 4 joints 6 leg 0.14  102s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_hop_s1
+  [A_hop s2] gen 149 best   8.000 mean   3.351 legs 4 joints 10 leg 0.27  134s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_hop_s2
+  [A_sideways s0] gen 149 best  42.763 mean  16.224 legs 2 joints 4 leg 0.29  168s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_sideways_s0
+  [A_sideways s1] gen 149 best  14.446 mean   7.503 legs 2 joints 6 leg 0.43  179s
+saved C:\Users\namle\Desktop\evolutionary_robotics\zapgpt_morph\step2_morph\results\A_sideways_s1

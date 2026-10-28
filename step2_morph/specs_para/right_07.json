@@ -1,0 +1,26 @@
+{
+ "name": "right_07",
+ "prompt": "a four-legged robot that walks sideways, but never to the left",
+ "kind": "negation",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "abs_dy",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The robot must have four legs and maximize leftward displacement while penalizing any rightward movement to ensure it never walks to the left.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

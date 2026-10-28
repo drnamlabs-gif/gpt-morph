@@ -1,0 +1,28 @@
+{
+ "name": "body_04",
+ "prompt": "an insect-like robot that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "abs_dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 6
+  }
+ ],
+ "reasoning": "The request specifies an insect-like robot which implies six legs, and walking sideways to the right requires maximizing positive dy displacement while minimizing forward motion and turning.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

@@ -1,0 +1,93 @@
+== forward: "walk forward"
+  [forward] gen   0 best   0.375 mean  -0.290     3s
+  [forward] gen  10 best   1.380 mean   0.400    22s
+  [forward] gen  20 best   1.380 mean   0.531    40s
+  [forward] gen  30 best   1.687 mean   0.507    58s
+  [forward] gen  40 best   1.788 mean   0.616    76s
+  [forward] gen  50 best   1.981 mean   0.771    95s
+  [forward] gen  60 best   2.112 mean   0.717   113s
+  [forward] gen  70 best   2.112 mean   0.734   131s
+  [forward] gen  80 best   2.127 mean   0.732   150s
+  [forward] gen  90 best   2.148 mean   0.730   168s
+  [forward] gen 100 best   2.148 mean   0.675   186s
+  [forward] gen 110 best   2.264 mean   0.778   204s
+  [forward] gen 120 best   2.264 mean   0.674   223s
+  [forward] gen 130 best   2.264 mean   0.633   241s
+  [forward] gen 140 best   2.264 mean   0.628   260s
+  [forward] gen 149 best   2.264 mean   0.521   276s
+== backward: "walk backward"
+  [backward] gen   0 best   1.140 mean  -0.267     2s
+  [backward] gen  10 best   1.140 mean   0.133    21s
+  [backward] gen  20 best   1.404 mean   0.713    40s
+  [backward] gen  30 best   1.723 mean   0.822    58s
+  [backward] gen  40 best   1.811 mean   0.842    77s
+  [backward] gen  50 best   1.974 mean   0.964    96s
+  [backward] gen  60 best   2.038 mean   1.041   114s
+  [backward] gen  70 best   2.117 mean   1.119   132s
+  [backward] gen  80 best   2.133 mean   1.006   149s
+  [backward] gen  90 best   2.138 mean   0.982   166s
+  [backward] gen 100 best   2.138 mean   1.037   184s
+  [backward] gen 110 best   2.212 mean   1.025   201s
+  [backward] gen 120 best   2.212 mean   1.050   217s
+  [backward] gen 130 best   2.242 mean   0.977   234s
+  [backward] gen 140 best   2.250 mean   1.063   251s
+  [backward] gen 149 best   2.250 mean   1.094   266s
+== sideways: "walk sideways to the left"
+  [sideways] gen   0 best   0.283 mean  -0.398     2s
+  [sideways] gen  10 best   0.820 mean  -0.221    19s
+  [sideways] gen  20 best   0.860 mean  -0.168    36s
+  [sideways] gen  30 best   1.037 mean   0.179    52s
+  [sideways] gen  40 best   1.292 mean   0.283    69s
+  [sideways] gen  50 best   1.319 mean   0.278    85s
+  [sideways] gen  60 best   1.418 mean   0.286   102s
+  [sideways] gen  70 best   1.418 mean   0.292   119s
+  [sideways] gen  80 best   1.546 mean   0.323   135s
+  [sideways] gen  90 best   1.571 mean   0.596   152s
+  [sideways] gen 100 best   1.571 mean   0.242   169s
+  [sideways] gen 110 best   1.571 mean   0.442   186s
+  [sideways] gen 120 best   1.571 mean   0.488   202s
+  [sideways] gen 130 best   1.571 mean   0.505   219s
+  [sideways] gen 140 best   1.636 mean   0.443   236s
+  [sideways] gen 149 best   1.652 mean   0.495   251s
+== turn_left: "turn left on the spot"
+  [turn_left] gen   0 best   5.527 mean  -0.694     2s
+  [turn_left] gen  10 best   7.519 mean   1.091    18s
+  [turn_left] gen  20 best  13.837 mean   4.196    35s
+  [turn_left] gen  30 best  15.565 mean   6.156    52s
+  [turn_left] gen  40 best  18.846 mean   7.284    68s
+  [turn_left] gen  50 best  19.155 mean   7.204    85s
+  [turn_left] gen  60 best  19.155 mean   8.506   102s
+  [turn_left] gen  70 best  19.160 mean   8.350   118s
+  [turn_left] gen  80 best  19.357 mean   6.988   135s
+  [turn_left] gen  90 best  19.830 mean   8.046   152s
+  [turn_left] gen 100 best  19.830 mean   9.947   168s
+  [turn_left] gen 110 best  19.830 mean   9.346   185s
+  [turn_left] gen 120 best  21.362 mean  10.292   202s
+  [turn_left] gen 130 best  22.465 mean  12.474   219s
+  [turn_left] gen 140 best  22.465 mean  11.083   236s
+  [turn_left] gen 149 best  22.465 mean  11.119   251s
+== hop: "hop: keep all feet off the ground as much as possible"
+  [hop] gen   0 best   0.093 mean  -0.199     2s
+  [hop] gen  10 best   0.244 mean   0.035    19s
+  [hop] gen  20 best   0.288 mean   0.140    36s
+  [hop] gen  30 best   0.359 mean   0.256    52s
+  [hop] gen  40 best   0.412 mean   0.312    69s
+  [hop] gen  50 best   0.429 mean   0.317    86s
+  [hop] gen  60 best   0.461 mean   0.340   103s
+  [hop] gen  70 best   0.473 mean   0.341   120s
+  [hop] gen  80 best   0.473 mean   0.330   137s
+  [hop] gen  90 best   0.473 mean   0.358   153s
+  [hop] gen 100 best   0.475 mean   0.373   170s
+  [hop] gen 110 best   0.475 mean   0.361   186s
+  [hop] gen 120 best   0.475 mean   0.358   203s
+  [hop] gen 130 best   0.482 mean   0.378   220s
+  [hop] gen 140 best   0.482 mean   0.360   236s
+  [hop] gen 149 best   0.482 mean   0.381   251s
+
+specificity (row = champion evolved for, column = metric)
+               forward   backward   sideways  turn_left        hop
+    forward      2.291     -2.291     -0.978     -4.295      0.011
+   backward     -2.250      2.250     -1.246     -4.678      0.060
+   sideways     -0.093      0.093      1.727     -3.160      0.036
+  turn_left      0.026     -0.026      0.075     22.465      0.064
+        hop     -0.162      0.162     -0.273     -0.337      0.482

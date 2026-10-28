@@ -1,0 +1,21 @@
+{
+ "name": "B_six_forward",
+ "prompt": "a six-legged robot that walks forward",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dx",
+   "weight": 10.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 6
+  }
+ ],
+ "reasoning": "The request specifies a six-legged robot and prioritizes forward walking, so I set the leg count to 6 and assign a positive weight to forward displacement (dx) while leaving other descriptors unweighted.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

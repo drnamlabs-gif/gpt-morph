@@ -1,0 +1,26 @@
+{
+ "name": "right_05",
+ "prompt": "a quadruped that walks toward its starboard side",
+ "kind": "jargon",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies a quadruped and a movement pattern toward the starboard (right) side, which corresponds to negative dy in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

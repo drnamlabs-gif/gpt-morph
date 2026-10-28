@@ -1,0 +1,152 @@
+[
+ {
+  "kind": "count",
+  "text": "a six-legged robot that walks sideways to the right",
+  "body": "n_legs == 6",
+  "objective": "-10*dy +0*dx +0*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a six-legged robot and requires sideways motion to the right, which corresponds to negative dy displacement in the defined coordinate system."
+ },
+ {
+  "kind": "count",
+  "text": "a two-legged robot that walks sideways to the right",
+  "body": "n_legs == 2",
+  "objective": "-10*dy +0*dx +0*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a two-legged robot and a sideways walk to the right, which corresponds to negative dy displacement in the defined coordinate system."
+ },
+ {
+  "kind": "count-word",
+  "text": "a hexapod that walks sideways to the right",
+  "body": "n_legs == 6",
+  "objective": "-10*dy +0*dx +0*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a hexapod (6 legs) and walking sideways to the right, which corresponds to negative dy displacement in the defined coordinate system."
+ },
+ {
+  "kind": "count-word",
+  "text": "a biped that walks sideways to the right",
+  "body": "n_legs == 2",
+  "objective": "-10*dy -1*dx -5*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a biped (2 legs) and sideways motion to the right, which corresponds to negative dy in the defined coordinate system."
+ },
+ {
+  "kind": "count-implicit",
+  "text": "an insect-like robot that walks sideways to the right",
+  "body": "n_legs == 6",
+  "objective": "+10*dy -5*abs_dx -2*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   10.0
+  ],
+  "reasoning": "The request specifies an insect-like robot which implies six legs, and walking sideways to the right requires maximizing positive dy displacement while minimizing forward motion and turning."
+ },
+ {
+  "kind": "count-implicit",
+  "text": "a robot with three pairs of legs that walks sideways to the right",
+  "body": "n_legs == 6",
+  "objective": "-10*dy +0*dx",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies three pairs of legs (6 total) and a sideways walk to the right, which corresponds to negative dy displacement in the defined coordinate system."
+ },
+ {
+  "kind": "no-body",
+  "text": "a robot that walks sideways to the right",
+  "body": "(none)",
+  "objective": "+10*abs_dy -5*dx -2*yaw",
+  "body_ok": true,
+  "dy_weight": [],
+  "reasoning": "High weight on absolute lateral displacement encourages sideways walking, while negative weights on forward motion and yaw suppress forward progress and turning."
+ },
+ {
+  "kind": "no-body",
+  "text": "walk sideways to the right",
+  "body": "(none)",
+  "objective": "-10*dy +1*dx",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a sideways walk to the right, which corresponds to negative dy displacement in the defined coordinate system."
+ },
+ {
+  "kind": "shape",
+  "text": "a robot with very long legs that walks sideways to the right",
+  "body": "mean_leg_len >= 0.4, max_leg_len >= 0.4",
+  "objective": "-10*dy +0*dx -5*abs_yaw",
+  "body_ok": true,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "High negative weight on dy penalizes rightward movement, while long legs are required for the 'very long' morphology constraint."
+ },
+ {
+  "kind": "shape",
+  "text": "a low, flat robot with short stubby legs that walks sideways to the right",
+  "body": "torso_L <= 0.14, mean_leg_len <= 0.15",
+  "objective": "+10*abs_dy -5*dx -5*yaw",
+  "body_ok": true,
+  "dy_weight": [],
+  "reasoning": "The request specifies a low, flat robot with short legs and sideways motion to the right, which corresponds to maximizing leftward displacement (negative dy) while minimizing forward movement and rotation."
+ },
+ {
+  "kind": "shape",
+  "text": "a light robot, as light as possible, that walks sideways to the right",
+  "body": "mass <= 0.9",
+  "objective": "+10*dy -5*dx -2*yaw",
+  "body_ok": true,
+  "dy_weight": [
+   10.0
+  ],
+  "reasoning": "The request specifies a light robot (minimize mass) and sideways movement to the right, which corresponds to negative dy in the defined coordinate system."
+ },
+ {
+  "kind": "vietnamese",
+  "text": "robot sáu chân đi ngang sang bên phải",
+  "body": "n_legs == 6",
+  "objective": "+10*dy -5*abs_dx -2*abs_yaw",
+  "body_ok": true,
+  "dy_weight": [
+   10.0
+  ],
+  "reasoning": "The request specifies a six-legged robot ('sáu chân') and lateral movement to the right, which corresponds to negative dy in the defined coordinate system."
+ },
+ {
+  "kind": "probe",
+  "text": "an eight-legged spider robot that walks sideways to the right",
+  "body": "n_legs == 8",
+  "objective": "+10*dy -5*abs_dx -2*abs_yaw",
+  "body_ok": null,
+  "dy_weight": [
+   10.0
+  ],
+  "reasoning": "The request specifies an eight-legged robot and a sideways walking motion to the right, which corresponds to positive dy displacement while minimizing forward movement and rotation."
+ },
+ {
+  "kind": "probe",
+  "text": "a three-legged robot that walks sideways to the right",
+  "body": "n_legs == 3",
+  "objective": "-10*dy +0*dx",
+  "body_ok": null,
+  "dy_weight": [
+   -10.0
+  ],
+  "reasoning": "The request specifies a three-legged robot and sideways motion to the right, which corresponds to negative dy displacement."
+ }
+]

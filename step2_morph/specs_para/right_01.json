@@ -1,0 +1,26 @@
+{
+ "name": "right_01",
+ "prompt": "a four-legged robot that moves sideways to its right",
+ "kind": "near",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies a four-legged robot and a desire to move sideways to its right, which corresponds to negative dy displacement in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

@@ -1,0 +1,502 @@
+[
+ {
+  "text": "a four-legged robot that moves sideways to its right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "near",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a 4-legged robot walking sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "near",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a quadruped that strafes right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   false,
+   true
+  ],
+  "kind": "lexical",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a robot with two pairs of legs that shuffles rightward like a crab",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   false,
+   true
+  ],
+  "kind": "lexical",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   false,
+   true
+  ]
+ },
+ {
+  "text": "a quadruped that walks toward its starboard side",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   false
+  ],
+  "kind": "jargon",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   false
+  ]
+ },
+ {
+  "text": "a four-legged robot that keeps facing forward while moving toward its right-hand side",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "indirect",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   false
+  ]
+ },
+ {
+  "text": "a four-legged robot that walks sideways, but never to the left",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "negation",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   false
+  ]
+ },
+ {
+  "text": "Going right, sideways: that is the task. Use four legs.",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "reordered",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a four-legged robot, painted red with a camera on top, that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "distractor",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   false
+  ]
+ },
+ {
+  "text": "robot bốn chân đi ngang sang bên phải",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "vietnamese",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   false,
+   false
+  ]
+ },
+ {
+  "text": "un robot à quatre pattes qui marche de côté vers la droite",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   false
+  ],
+  "kind": "french",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   false,
+   false
+  ]
+ },
+ {
+  "text": "a six-legged robot that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "count",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a two-legged robot that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "count",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a hexapod that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "count-word",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   false,
+   true
+  ]
+ },
+ {
+  "text": "a biped that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   false,
+   true
+  ],
+  "kind": "count-word",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   false,
+   false
+  ]
+ },
+ {
+  "text": "an insect-like robot that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   false,
+   true
+  ],
+  "kind": "count-implicit",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   false,
+   true
+  ]
+ },
+ {
+  "text": "a robot with three pairs of legs that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   false,
+   true
+  ],
+  "kind": "count-implicit",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   false,
+   false
+  ]
+ },
+ {
+  "text": "a robot that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "no-body",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "walk sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "no-body",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a robot with very long legs that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "shape",
+  "llm27b": [
+   true,
+   true
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a low, flat robot with short stubby legs that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "shape",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "a light robot, as light as possible, that walks sideways to the right",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "shape",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   true,
+   true
+  ]
+ },
+ {
+  "text": "robot sáu chân đi ngang sang bên phải",
+  "base": [
+   false,
+   false
+  ],
+  "lora": [
+   true,
+   true
+  ],
+  "kind": "vietnamese",
+  "llm27b": [
+   true,
+   false
+  ],
+  "student": [
+   false,
+   false
+  ]
+ },
+ {
+  "text": "an eight-legged spider robot that walks sideways to the right",
+  "base": [
+   null,
+   false
+  ],
+  "lora": [
+   null,
+   true
+  ],
+  "kind": "probe",
+  "llm27b": [
+   null,
+   false
+  ],
+  "student": [
+   null,
+   true
+  ]
+ },
+ {
+  "text": "a three-legged robot that walks sideways to the right",
+  "base": [
+   null,
+   false
+  ],
+  "lora": [
+   null,
+   true
+  ],
+  "kind": "probe",
+  "llm27b": [
+   null,
+   true
+  ],
+  "student": [
+   null,
+   false
+  ]
+ }
+]

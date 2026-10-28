@@ -1,0 +1,29 @@
+{
+ "name": "B_two_forward",
+ "prompt": "a two-legged robot that walks forward",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dx",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dy",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 2
+  }
+ ],
+ "reasoning": "The request specifies a two-legged robot walking forward, so n_legs is constrained to 2 and the behaviour weights prioritize forward displacement while penalizing lateral drift and rotation.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

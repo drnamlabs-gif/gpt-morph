@@ -1,0 +1,109 @@
+{
+ "spec": {
+  "name": "B_four_right_dr",
+  "prompt": "a four-legged robot that walks sideways to the right",
+  "compiler": "qwen3.6:latest",
+  "behaviour": [
+   {
+    "descriptor": "dy",
+    "weight": -10.0
+   },
+   {
+    "descriptor": "dx",
+    "weight": 0.0
+   }
+  ],
+  "morphology": [
+   {
+    "descriptor": "n_legs",
+    "op": "==",
+    "value": 4
+   }
+  ],
+  "reasoning": "The request specifies a four-legged robot and requires sideways motion to the right, which corresponds to negative dy displacement in the defined coordinate system.",
+  "validation_errors": [],
+  "repair_attempts": [],
+  "physics": {
+   "f_max": 1.5,
+   "conditions": [
+    {
+     "friction": 1.0,
+     "solref": 0.004,
+     "foot_scale": 1.0
+    },
+    {
+     "friction": 0.6,
+     "solref": 0.02,
+     "foot_scale": 1.2
+    },
+    {
+     "friction": 1.2,
+     "solref": 0.002,
+     "foot_scale": 0.8
+    }
+   ],
+   "_note": "transfer fix after the MuJoCo-vs-Isaac probe: servo matched, contact did not; cap CPG at 1.5 Hz and score the worst of 3 contact corners"
+  }
+ },
+ "seed": 0,
+ "generations": 150,
+ "pop": 64,
+ "fitness": 13.545843213761984,
+ "behaviour_score": 13.545843213761984,
+ "violated": [],
+ "descriptors": {
+  "dx": 0.250999167577194,
+  "dy": -1.3545843213761983,
+  "yaw": 0.27197825682908805,
+  "airtime": 0.0,
+  "belly_contact": 0.0,
+  "stand_z": 0.2147311458603032,
+  "z_mean": 0.19948389166529085,
+  "fallen_at": null,
+  "flipped_at": null,
+  "peak_joint_speed": 4.062451225241042,
+  "dx_2nd_half": 0.14956980718880558,
+  "dy_2nd_half": -0.6742848974232479,
+  "mass": 1.5461,
+  "n_legs": 4,
+  "n_joints": 6,
+  "torso_L": 0.33353814788711267,
+  "torso_W": 0.18773950294362285,
+  "mean_leg_len": 0.17485944549425853,
+  "max_leg_len": 0.19971889098851706,
+  "axis_frac": {
+   "y": 0.3333333333333333,
+   "x": 0.6666666666666666,
+   "z": 0.0
+  }
+ },
+ "body": {
+  "L": 0.33353814788711267,
+  "W": 0.18773950294362285,
+  "n_pairs": 2,
+  "pairs": [
+   {
+    "n_seg": 1,
+    "len": [
+     0.15
+    ],
+    "axis": [
+     "x"
+    ]
+   },
+   {
+    "n_seg": 2,
+    "len": [
+     0.05193045351924086,
+     0.1477884374692762
+    ],
+    "axis": [
+     "y",
+     "x"
+    ]
+   }
+  ]
+ },
+ "evaluations": 9600,
+ "wall_clock_s": 259.6817362308502
+}

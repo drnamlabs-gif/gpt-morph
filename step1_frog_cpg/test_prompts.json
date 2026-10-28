@@ -1,0 +1,48 @@
+{
+  "_note": "Written before any test was run. 'near' = shares key words with the training prompt; 'far' = same meaning, different words. 'probe' = behaviours never trained (expected to fail with retrieval; diagnostic only, not scored).",
+  "train": {
+    "forward": "walk forward",
+    "backward": "walk backward",
+    "sideways": "walk sideways to the left",
+    "turn_left": "turn left on the spot",
+    "hop": "hop: keep all feet off the ground as much as possible"
+  },
+  "test": [
+    {"label": "forward", "kind": "near", "text": "walk ahead"},
+    {"label": "forward", "kind": "near", "text": "move forward"},
+    {"label": "forward", "kind": "far", "text": "go straight in front of you"},
+    {"label": "forward", "kind": "far", "text": "advance toward the front"},
+    {"label": "forward", "kind": "far", "text": "head onward, nose first"},
+
+    {"label": "backward", "kind": "near", "text": "walk backwards"},
+    {"label": "backward", "kind": "near", "text": "move backward"},
+    {"label": "backward", "kind": "far", "text": "reverse"},
+    {"label": "backward", "kind": "far", "text": "retreat"},
+    {"label": "backward", "kind": "far", "text": "back away from where you are facing"},
+
+    {"label": "sideways", "kind": "near", "text": "walk sideways"},
+    {"label": "sideways", "kind": "near", "text": "move to the left side"},
+    {"label": "sideways", "kind": "far", "text": "shuffle left like a crab"},
+    {"label": "sideways", "kind": "far", "text": "strafe left"},
+    {"label": "sideways", "kind": "far", "text": "slide over to your left without turning"},
+
+    {"label": "turn_left", "kind": "near", "text": "turn left"},
+    {"label": "turn_left", "kind": "near", "text": "rotate left in place"},
+    {"label": "turn_left", "kind": "far", "text": "spin counterclockwise"},
+    {"label": "turn_left", "kind": "far", "text": "pivot around without going anywhere"},
+    {"label": "turn_left", "kind": "far", "text": "do a full circle on the spot"},
+
+    {"label": "hop", "kind": "near", "text": "hop"},
+    {"label": "hop", "kind": "near", "text": "jump off the ground"},
+    {"label": "hop", "kind": "far", "text": "bounce"},
+    {"label": "hop", "kind": "far", "text": "leap like a frog"},
+    {"label": "hop", "kind": "far", "text": "spend as much time airborne as you can"}
+  ],
+  "probe": [
+    {"intended": "walk right (never trained)", "text": "walk sideways to the right"},
+    {"intended": "turn right (never trained)", "text": "turn right on the spot"},
+    {"intended": "stand still (never trained)", "text": "stand still and do not move"},
+    {"intended": "forward + turn left (composition)", "text": "walk forward while turning left"},
+    {"intended": "negation of backward", "text": "do not walk backward"}
+  ]
+}

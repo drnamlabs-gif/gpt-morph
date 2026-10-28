@@ -1,0 +1,30 @@
+{
+ "name": "B_longleg_hop",
+ "prompt": "a robot with long legs that hops",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "airtime",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "mean_leg_len",
+   "op": ">=",
+   "value": 0.35
+  },
+  {
+   "descriptor": "max_leg_len",
+   "op": ">=",
+   "value": 0.4
+  }
+ ],
+ "reasoning": "Long legs are required for hopping, so I set high minimums for leg length, and positive weights on airtime and forward displacement to encourage the hop.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

@@ -1,0 +1,74 @@
+{
+ "spec": {
+  "name": "L_hop_fr",
+  "prompt": "un robot aux longues jambes qui saute",
+  "compiler": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+  "behaviour": [
+   {
+    "descriptor": "airtime",
+    "weight": 10.0
+   }
+  ],
+  "morphology": [
+   {
+    "descriptor": "mean_leg_len",
+    "op": ">=",
+    "value": 0.35
+   }
+  ]
+ },
+ "seed": 0,
+ "generations": 150,
+ "pop": 64,
+ "fitness": 5.937777777777777,
+ "behaviour_score": 5.937777777777777,
+ "violated": [],
+ "descriptors": {
+  "dx": 0.004175388046660068,
+  "dy": -0.5445493420370777,
+  "yaw": 0.001366875208277829,
+  "airtime": 0.5937777777777777,
+  "belly_contact": 0.0,
+  "stand_z": 0.4072447679221114,
+  "z_mean": 0.23018119628314182,
+  "fallen_at": null,
+  "flipped_at": null,
+  "peak_joint_speed": 7.500893845339467,
+  "dx_2nd_half": 0.004175387954304524,
+  "dy_2nd_half": -0.22010046277153295,
+  "mass": 1.1974,
+  "n_legs": 2,
+  "n_joints": 6,
+  "torso_L": 0.14,
+  "torso_W": 0.11,
+  "mean_leg_len": 0.3643773447174093,
+  "max_leg_len": 0.3643773447174093,
+  "axis_frac": {
+   "y": 0.0,
+   "x": 1.0,
+   "z": 0.0
+  }
+ },
+ "body": {
+  "L": 0.14,
+  "W": 0.11,
+  "n_pairs": 1,
+  "pairs": [
+   {
+    "n_seg": 3,
+    "len": [
+     0.08392697251856907,
+     0.14063094617200617,
+     0.13981942602683406
+    ],
+    "axis": [
+     "x",
+     "x",
+     "x"
+    ]
+   }
+  ]
+ },
+ "evaluations": 9600,
+ "wall_clock_s": 149.3349997997284
+}

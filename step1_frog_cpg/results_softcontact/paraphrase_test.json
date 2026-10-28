@@ -1,0 +1,1030 @@
+{
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "mapping": "nearest training prompt (retrieval)",
+ "accuracy": {
+  "near": 1.0,
+  "far": 0.4666666666666667,
+  "all": 0.68
+ },
+ "per_label": {
+  "forward": 0.6,
+  "backward": 1.0,
+  "sideways": 0.4,
+  "turn_left": 0.6,
+  "hop": 0.8
+ },
+ "tests": [
+  {
+   "text": "walk ahead",
+   "retrieved": "forward",
+   "cos": {
+    "forward": 0.809492826461792,
+    "backward": 0.6782346367835999,
+    "sideways": 0.5496044158935547,
+    "turn_left": 0.3363574743270874,
+    "hop": 0.38359886407852173
+   },
+   "cos_max": 0.809492826461792,
+   "executed": "forward",
+   "descriptors": {
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw": -0.21309699503948965,
+    "airtime": 0.008,
+    "z_mean": 0.20546985171257703,
+    "z_range": 0.011169987194022402,
+    "flipped_at": null,
+    "peak_joint_speed": 4.391524556556025,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 1.0,
+    "backward": -1.062017313165662,
+    "sideways": -0.6715922054641096,
+    "turn_left": -0.2655693881070404,
+    "hop": 0.03120567375886525
+   },
+   "label": "forward",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "move forward",
+   "retrieved": "forward",
+   "cos": {
+    "forward": 0.7286614179611206,
+    "backward": 0.5691156387329102,
+    "sideways": 0.3907049298286438,
+    "turn_left": 0.27670592069625854,
+    "hop": 0.2300087958574295
+   },
+   "cos_max": 0.7286614179611206,
+   "executed": "forward",
+   "descriptors": {
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw": -0.21309699503948965,
+    "airtime": 0.008,
+    "z_mean": 0.20546985171257703,
+    "z_range": 0.011169987194022402,
+    "flipped_at": null,
+    "peak_joint_speed": 4.391524556556025,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 1.0,
+    "backward": -1.062017313165662,
+    "sideways": -0.6715922054641096,
+    "turn_left": -0.2655693881070404,
+    "hop": 0.03120567375886525
+   },
+   "label": "forward",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "go straight in front of you",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.5305157899856567,
+    "backward": 0.548457682132721,
+    "sideways": 0.5303208827972412,
+    "turn_left": 0.465932697057724,
+    "hop": 0.33287376165390015
+   },
+   "cos_max": 0.548457682132721,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "forward",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "advance toward the front",
+   "retrieved": "forward",
+   "cos": {
+    "forward": 0.5683725476264954,
+    "backward": 0.5530418157577515,
+    "sideways": 0.5083217024803162,
+    "turn_left": 0.4586102068424225,
+    "hop": 0.2920718193054199
+   },
+   "cos_max": 0.5683725476264954,
+   "executed": "forward",
+   "descriptors": {
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw": -0.21309699503948965,
+    "airtime": 0.008,
+    "z_mean": 0.20546985171257703,
+    "z_range": 0.011169987194022402,
+    "flipped_at": null,
+    "peak_joint_speed": 4.391524556556025,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 1.0,
+    "backward": -1.062017313165662,
+    "sideways": -0.6715922054641096,
+    "turn_left": -0.2655693881070404,
+    "hop": 0.03120567375886525
+   },
+   "label": "forward",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "head onward, nose first",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.38722240924835205,
+    "backward": 0.3616766929626465,
+    "sideways": 0.34843453764915466,
+    "turn_left": 0.3885701298713684,
+    "hop": 0.24622885882854462
+   },
+   "cos_max": 0.3885701298713684,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "forward",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "walk backwards",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.8216265439987183,
+    "backward": 0.9563143253326416,
+    "sideways": 0.7416957020759583,
+    "turn_left": 0.3611906170845032,
+    "hop": 0.4500376880168915
+   },
+   "cos_max": 0.9563143253326416,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "backward",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "move backward",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.6606220602989197,
+    "backward": 0.8391799330711365,
+    "sideways": 0.6396437287330627,
+    "turn_left": 0.4314306676387787,
+    "hop": 0.35304558277130127
+   },
+   "cos_max": 0.8391799330711365,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "backward",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "reverse",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.40126919746398926,
+    "backward": 0.528998851776123,
+    "sideways": 0.4240865111351013,
+    "turn_left": 0.4535942077636719,
+    "hop": 0.1765599548816681
+   },
+   "cos_max": 0.528998851776123,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "backward",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "retreat",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.43967193365097046,
+    "backward": 0.44589555263519287,
+    "sideways": 0.33730548620224,
+    "turn_left": 0.25160902738571167,
+    "hop": 0.31610265374183655
+   },
+   "cos_max": 0.44589555263519287,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "backward",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "back away from where you are facing",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.3779570758342743,
+    "backward": 0.49122875928878784,
+    "sideways": 0.4180816411972046,
+    "turn_left": 0.4181455373764038,
+    "hop": 0.23745761811733246
+   },
+   "cos_max": 0.49122875928878784,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "backward",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "walk sideways",
+   "retrieved": "sideways",
+   "cos": {
+    "forward": 0.7330058217048645,
+    "backward": 0.7954501509666443,
+    "sideways": 0.9112837314605713,
+    "turn_left": 0.3488301634788513,
+    "hop": 0.5122711062431335
+   },
+   "cos_max": 0.9112837314605713,
+   "executed": "sideways",
+   "descriptors": {
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw": -0.5843035360109745,
+    "airtime": 0.006909090909090909,
+    "z_mean": 0.21311907969876842,
+    "z_range": 0.015559596787099922,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2495118360859925,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.03701783950709442,
+    "backward": 0.039313586452522115,
+    "sideways": 1.0,
+    "turn_left": -0.19805316400553796,
+    "hop": 0.02695035460992908
+   },
+   "label": "sideways",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "move to the left side",
+   "retrieved": "sideways",
+   "cos": {
+    "forward": 0.4421488046646118,
+    "backward": 0.503723680973053,
+    "sideways": 0.7240289449691772,
+    "turn_left": 0.6658908724784851,
+    "hop": 0.2288559377193451
+   },
+   "cos_max": 0.7240289449691772,
+   "executed": "sideways",
+   "descriptors": {
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw": -0.5843035360109745,
+    "airtime": 0.006909090909090909,
+    "z_mean": 0.21311907969876842,
+    "z_range": 0.015559596787099922,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2495118360859925,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.03701783950709442,
+    "backward": 0.039313586452522115,
+    "sideways": 1.0,
+    "turn_left": -0.19805316400553796,
+    "hop": 0.02695035460992908
+   },
+   "label": "sideways",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "shuffle left like a crab",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.31009626388549805,
+    "backward": 0.2912973165512085,
+    "sideways": 0.33225739002227783,
+    "turn_left": 0.35846805572509766,
+    "hop": 0.21197006106376648
+   },
+   "cos_max": 0.35846805572509766,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "sideways",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "strafe left",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.2561052143573761,
+    "backward": 0.22770169377326965,
+    "sideways": 0.23436471819877625,
+    "turn_left": 0.31134217977523804,
+    "hop": 0.08338894695043564
+   },
+   "cos_max": 0.31134217977523804,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "sideways",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "slide over to your left without turning",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.418813019990921,
+    "backward": 0.4716477692127228,
+    "sideways": 0.5660009384155273,
+    "turn_left": 0.6611999869346619,
+    "hop": 0.22600072622299194
+   },
+   "cos_max": 0.6611999869346619,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "sideways",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "turn left",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.45416462421417236,
+    "backward": 0.4605240821838379,
+    "sideways": 0.6074346303939819,
+    "turn_left": 0.7974205613136292,
+    "hop": 0.15003684163093567
+   },
+   "cos_max": 0.7974205613136292,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "turn_left",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "rotate left in place",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.18566229939460754,
+    "backward": 0.2507621943950653,
+    "sideways": 0.5535038113594055,
+    "turn_left": 0.5690865516662598,
+    "hop": 0.05174679309129715
+   },
+   "cos_max": 0.5690865516662598,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "turn_left",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "spin counterclockwise",
+   "retrieved": "sideways",
+   "cos": {
+    "forward": 0.1462997943162918,
+    "backward": 0.18918129801750183,
+    "sideways": 0.275084912776947,
+    "turn_left": 0.24885059893131256,
+    "hop": 0.06607023626565933
+   },
+   "cos_max": 0.275084912776947,
+   "executed": "sideways",
+   "descriptors": {
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw": -0.5843035360109745,
+    "airtime": 0.006909090909090909,
+    "z_mean": 0.21311907969876842,
+    "z_range": 0.015559596787099922,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2495118360859925,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.03701783950709442,
+    "backward": 0.039313586452522115,
+    "sideways": 1.0,
+    "turn_left": -0.19805316400553796,
+    "hop": 0.02695035460992908
+   },
+   "label": "turn_left",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "pivot around without going anywhere",
+   "retrieved": "sideways",
+   "cos": {
+    "forward": 0.40700244903564453,
+    "backward": 0.37094566226005554,
+    "sideways": 0.48801594972610474,
+    "turn_left": 0.4499513506889343,
+    "hop": 0.283141553401947
+   },
+   "cos_max": 0.48801594972610474,
+   "executed": "sideways",
+   "descriptors": {
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw": -0.5843035360109745,
+    "airtime": 0.006909090909090909,
+    "z_mean": 0.21311907969876842,
+    "z_range": 0.015559596787099922,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2495118360859925,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.03701783950709442,
+    "backward": 0.039313586452522115,
+    "sideways": 1.0,
+    "turn_left": -0.19805316400553796,
+    "hop": 0.02695035460992908
+   },
+   "label": "turn_left",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "do a full circle on the spot",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.22168421745300293,
+    "backward": 0.2386443316936493,
+    "sideways": 0.30905330181121826,
+    "turn_left": 0.5261812210083008,
+    "hop": 0.23002555966377258
+   },
+   "cos_max": 0.5261812210083008,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "label": "turn_left",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "hop",
+   "retrieved": "hop",
+   "cos": {
+    "forward": 0.4973439872264862,
+    "backward": 0.4654189944267273,
+    "sideways": 0.411531537771225,
+    "turn_left": 0.15905731916427612,
+    "hop": 0.6676357388496399
+   },
+   "cos_max": 0.6676357388496399,
+   "executed": "hop",
+   "descriptors": {
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw": 0.7083274282092002,
+    "airtime": 0.25636363636363635,
+    "z_mean": 0.2120703870663502,
+    "z_range": 0.018690114726205936,
+    "flipped_at": null,
+    "peak_joint_speed": 4.667374235138004,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.7747207292238597,
+    "backward": 0.8227668273040659,
+    "sideways": -0.4620770929439254,
+    "turn_left": -0.16910168989453828,
+    "hop": 1.0
+   },
+   "label": "hop",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "jump off the ground",
+   "retrieved": "hop",
+   "cos": {
+    "forward": 0.33993566036224365,
+    "backward": 0.4411602020263672,
+    "sideways": 0.30190953612327576,
+    "turn_left": 0.26512467861175537,
+    "hop": 0.6010569334030151
+   },
+   "cos_max": 0.6010569334030151,
+   "executed": "hop",
+   "descriptors": {
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw": 0.7083274282092002,
+    "airtime": 0.25636363636363635,
+    "z_mean": 0.2120703870663502,
+    "z_range": 0.018690114726205936,
+    "flipped_at": null,
+    "peak_joint_speed": 4.667374235138004,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.7747207292238597,
+    "backward": 0.8227668273040659,
+    "sideways": -0.4620770929439254,
+    "turn_left": -0.16910168989453828,
+    "hop": 1.0
+   },
+   "label": "hop",
+   "kind": "near",
+   "correct": true
+  },
+  {
+   "text": "bounce",
+   "retrieved": "hop",
+   "cos": {
+    "forward": 0.3464970290660858,
+    "backward": 0.35709482431411743,
+    "sideways": 0.16465982794761658,
+    "turn_left": 0.2173205316066742,
+    "hop": 0.3598206043243408
+   },
+   "cos_max": 0.3598206043243408,
+   "executed": "hop",
+   "descriptors": {
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw": 0.7083274282092002,
+    "airtime": 0.25636363636363635,
+    "z_mean": 0.2120703870663502,
+    "z_range": 0.018690114726205936,
+    "flipped_at": null,
+    "peak_joint_speed": 4.667374235138004,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.7747207292238597,
+    "backward": 0.8227668273040659,
+    "sideways": -0.4620770929439254,
+    "turn_left": -0.16910168989453828,
+    "hop": 1.0
+   },
+   "label": "hop",
+   "kind": "far",
+   "correct": true
+  },
+  {
+   "text": "leap like a frog",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.30725085735321045,
+    "backward": 0.39808493852615356,
+    "sideways": 0.3366039991378784,
+    "turn_left": 0.17553643882274628,
+    "hop": 0.39632534980773926
+   },
+   "cos_max": 0.39808493852615356,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "label": "hop",
+   "kind": "far",
+   "correct": false
+  },
+  {
+   "text": "spend as much time airborne as you can",
+   "retrieved": "hop",
+   "cos": {
+    "forward": 0.19598010182380676,
+    "backward": 0.2624712586402893,
+    "sideways": 0.2286967933177948,
+    "turn_left": 0.1317456066608429,
+    "hop": 0.4849463999271393
+   },
+   "cos_max": 0.4849463999271393,
+   "executed": "hop",
+   "descriptors": {
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw": 0.7083274282092002,
+    "airtime": 0.25636363636363635,
+    "z_mean": 0.2120703870663502,
+    "z_range": 0.018690114726205936,
+    "flipped_at": null,
+    "peak_joint_speed": 4.667374235138004,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.7747207292238597,
+    "backward": 0.8227668273040659,
+    "sideways": -0.4620770929439254,
+    "turn_left": -0.16910168989453828,
+    "hop": 1.0
+   },
+   "label": "hop",
+   "kind": "far",
+   "correct": true
+  }
+ ],
+ "probes": [
+  {
+   "text": "walk sideways to the right",
+   "retrieved": "sideways",
+   "cos": {
+    "forward": 0.6773359775543213,
+    "backward": 0.7539535760879517,
+    "sideways": 0.9807605743408203,
+    "turn_left": 0.4577465057373047,
+    "hop": 0.45008620619773865
+   },
+   "cos_max": 0.9807605743408203,
+   "executed": "sideways",
+   "descriptors": {
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw": -0.5843035360109745,
+    "airtime": 0.006909090909090909,
+    "z_mean": 0.21311907969876842,
+    "z_range": 0.015559596787099922,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2495118360859925,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.03701783950709442,
+    "backward": 0.039313586452522115,
+    "sideways": 1.0,
+    "turn_left": -0.19805316400553796,
+    "hop": 0.02695035460992908
+   },
+   "intended": "walk right (never trained)"
+  },
+  {
+   "text": "turn right on the spot",
+   "retrieved": "turn_left",
+   "cos": {
+    "forward": 0.3489046096801758,
+    "backward": 0.368105947971344,
+    "sideways": 0.4611090123653412,
+    "turn_left": 0.94754958152771,
+    "hop": 0.21723636984825134
+   },
+   "cos_max": 0.94754958152771,
+   "executed": "turn_left",
+   "descriptors": {
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw": 23.501765305233036,
+    "airtime": 0.028,
+    "z_mean": 0.2101854812065318,
+    "z_range": 0.00981445615414836,
+    "flipped_at": null,
+    "peak_joint_speed": 4.2829630224987225,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 0.012663758879620802,
+    "backward": -0.01344913117991268,
+    "sideways": 0.03330670161194771,
+    "turn_left": 1.0,
+    "hop": 0.10921985815602837
+   },
+   "intended": "turn right (never trained)"
+  },
+  {
+   "text": "stand still and do not move",
+   "retrieved": "hop",
+   "cos": {
+    "forward": 0.3899563252925873,
+    "backward": 0.3613775372505188,
+    "sideways": 0.37948501110076904,
+    "turn_left": 0.3512365221977234,
+    "hop": 0.39552557468414307
+   },
+   "cos_max": 0.39552557468414307,
+   "executed": "hop",
+   "descriptors": {
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw": 0.7083274282092002,
+    "airtime": 0.25636363636363635,
+    "z_mean": 0.2120703870663502,
+    "z_range": 0.018690114726205936,
+    "flipped_at": null,
+    "peak_joint_speed": 4.667374235138004,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.7747207292238597,
+    "backward": 0.8227668273040659,
+    "sideways": -0.4620770929439254,
+    "turn_left": -0.16910168989453828,
+    "hop": 1.0
+   },
+   "intended": "stand still (never trained)"
+  },
+  {
+   "text": "walk forward while turning left",
+   "retrieved": "forward",
+   "cos": {
+    "forward": 0.7914584875106812,
+    "backward": 0.7409563660621643,
+    "sideways": 0.7914222478866577,
+    "turn_left": 0.567125678062439,
+    "hop": 0.3827686905860901
+   },
+   "cos_max": 0.7914584875106812,
+   "executed": "forward",
+   "descriptors": {
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw": -0.21309699503948965,
+    "airtime": 0.008,
+    "z_mean": 0.20546985171257703,
+    "z_range": 0.011169987194022402,
+    "flipped_at": null,
+    "peak_joint_speed": 4.391524556556025,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": 1.0,
+    "backward": -1.062017313165662,
+    "sideways": -0.6715922054641096,
+    "turn_left": -0.2655693881070404,
+    "hop": 0.03120567375886525
+   },
+   "intended": "forward + turn left (composition)"
+  },
+  {
+   "text": "do not walk backward",
+   "retrieved": "backward",
+   "cos": {
+    "forward": 0.7275378704071045,
+    "backward": 0.9229141473770142,
+    "sideways": 0.6815390586853027,
+    "turn_left": 0.3251191973686218,
+    "hop": 0.48060736060142517
+   },
+   "cos_max": 0.9229141473770142,
+   "executed": "backward",
+   "descriptors": {
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw": -0.38804920499697637,
+    "airtime": 0.011272727272727273,
+    "z_mean": 0.21538585917057934,
+    "z_range": 0.01110455444516234,
+    "flipped_at": null,
+    "peak_joint_speed": 4.650350676902019,
+    "overspeed_frac": 0.0
+   },
+   "ratios": {
+    "forward": -0.9416042352635469,
+    "backward": 1.0,
+    "sideways": -0.5280807467475914,
+    "turn_left": -0.2597641911295446,
+    "hop": 0.04397163120567376
+   },
+   "intended": "negation of backward"
+  }
+ ]
+}

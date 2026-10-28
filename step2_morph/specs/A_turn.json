@@ -1,0 +1,19 @@
+{
+ "name": "A_turn",
+ "prompt": "turn left on the spot",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "yaw",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "travel",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "The request prioritizes turning left while minimizing forward displacement to stay on the spot.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

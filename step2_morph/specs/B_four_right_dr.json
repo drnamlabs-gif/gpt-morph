@@ -1,0 +1,46 @@
+{
+ "name": "B_four_right_dr",
+ "prompt": "a four-legged robot that walks sideways to the right",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies a four-legged robot and requires sideways motion to the right, which corresponds to negative dy displacement in the defined coordinate system.",
+ "validation_errors": [],
+ "repair_attempts": [],
+ "physics": {
+  "f_max": 1.5,
+  "conditions": [
+   {
+    "friction": 1.0,
+    "solref": 0.004,
+    "foot_scale": 1.0
+   },
+   {
+    "friction": 0.6,
+    "solref": 0.02,
+    "foot_scale": 1.2
+   },
+   {
+    "friction": 1.2,
+    "solref": 0.002,
+    "foot_scale": 0.8
+   }
+  ],
+  "_note": "transfer fix after the MuJoCo-vs-Isaac probe: servo matched, contact did not; cap CPG at 1.5 Hz and score the worst of 3 contact corners"
+ }
+}

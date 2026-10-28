@@ -1,0 +1,15 @@
+{
+ "name": "A_hop",
+ "prompt": "hop: keep all feet off the ground as much as possible",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "airtime",
+   "weight": 10.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "The request prioritizes maximizing airtime, so a high positive weight is assigned to the airtime descriptor while no specific morphological constraints are imposed.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

@@ -1,0 +1,117 @@
+{
+ "_note": "Human-written pass criteria for each prompt, fixed before any step-2 result was seen and independent of the LLM-compiled specs (different thresholds on purpose). A run passes only if the robot did not flip AND every check holds. 'body' and 'behaviour' are scored separately. Revised 2026-10-18 after the first run, before any further run: 'fallen' = torso tilt > 0.6 rad (was: > 60 deg, which let a robot topple forward 0.8 m and pass); translation rules also require >= 30% of the displacement in the second half of the episode. Added 2026-10-18 before running: L_turn_it, L_hop_fr (LoRA-compiled demo prompts).",
+ "behaviour_rules": {
+  "forward": "dx > 0.5 and abs(dy) < 0.5 * dx and dx_2nd_half > 0.3 * dx",
+  "backward": "dx < -0.5 and abs(dy) < 0.5 * abs(dx) and dx_2nd_half < 0.3 * dx",
+  "left": "dy > 0.5 and abs(dx) < 0.5 * dy and dy_2nd_half > 0.3 * dy",
+  "right": "dy < -0.5 and abs(dx) < 0.5 * abs(dy) and dy_2nd_half < 0.3 * dy",
+  "turn_left_in_place": "yaw > 6.283 and travel < 0.5",
+  "hop": "airtime > 0.15",
+  "no_hop": "airtime < 0.05"
+ },
+ "prompts": {
+  "A_forward": {
+   "body": [],
+   "behaviour": [
+    "forward"
+   ]
+  },
+  "A_backward": {
+   "body": [],
+   "behaviour": [
+    "backward"
+   ]
+  },
+  "A_sideways": {
+   "body": [],
+   "behaviour": [
+    "left"
+   ]
+  },
+  "A_turn": {
+   "body": [],
+   "behaviour": [
+    "turn_left_in_place"
+   ]
+  },
+  "A_hop": {
+   "body": [],
+   "behaviour": [
+    "hop"
+   ]
+  },
+  "B_six_forward": {
+   "body": [
+    "n_legs == 6"
+   ],
+   "behaviour": [
+    "forward"
+   ]
+  },
+  "B_two_forward": {
+   "body": [
+    "n_legs == 2"
+   ],
+   "behaviour": [
+    "forward"
+   ]
+  },
+  "B_longleg_hop": {
+   "body": [
+    "mean_leg_len >= 0.30"
+   ],
+   "behaviour": [
+    "hop"
+   ]
+  },
+  "B_low_wide_turn": {
+   "body": [
+    "torso_W >= 0.20",
+    "mean_leg_len <= 0.15",
+    "stand_z <= 0.22"
+   ],
+   "behaviour": [
+    "turn_left_in_place"
+   ]
+  },
+  "B_four_right": {
+   "body": [
+    "n_legs == 4"
+   ],
+   "behaviour": [
+    "right"
+   ]
+  },
+  "B_tall_nohop": {
+   "body": [
+    "stand_z >= 0.30"
+   ],
+   "behaviour": [
+    "forward",
+    "no_hop"
+   ]
+  },
+  "L_turn_it": {
+   "body": [],
+   "behaviour": [
+    "turn_left_in_place"
+   ]
+  },
+  "L_hop_fr": {
+   "body": [
+    "mean_leg_len >= 0.30"
+   ],
+   "behaviour": [
+    "hop"
+   ]
+  },
+  "B_four_right_dr": {
+   "body": [
+    "n_legs == 4"
+   ],
+   "behaviour": [
+    "right"
+   ]
+  }
+ }
+}

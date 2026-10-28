@@ -1,0 +1,73 @@
+{
+  "_note": "Training paraphrases for the P2I student, written after the test set was fixed and kept disjoint from it (checked in code: no exact string overlap). The original training prompt of each behaviour is the first entry.",
+  "forward": [
+    "walk forward",
+    "go forward",
+    "walk to the front",
+    "move ahead",
+    "keep walking forwards",
+    "proceed forward",
+    "travel in the direction you face",
+    "step forward",
+    "walk straight ahead",
+    "march forward",
+    "make progress forwards",
+    "go towards the front"
+  ],
+  "backward": [
+    "walk backward",
+    "go backward",
+    "step backwards",
+    "move back",
+    "walk in reverse",
+    "back up",
+    "go back the way you are facing away from",
+    "travel backwards",
+    "move to the rear",
+    "retreat backwards slowly",
+    "walk away backwards",
+    "reverse direction and walk"
+  ],
+  "sideways": [
+    "walk sideways to the left",
+    "step sideways to the left",
+    "move sideways leftwards",
+    "walk to your left side",
+    "sidestep to the left",
+    "travel left while facing forward",
+    "go left without turning your body",
+    "crab walk to the left",
+    "shift sideways to the left",
+    "move laterally to the left",
+    "walk left keeping the same heading",
+    "side-shuffle leftwards"
+  ],
+  "turn_left": [
+    "turn left on the spot",
+    "turn to the left",
+    "rotate to the left",
+    "spin to the left",
+    "turn around to the left in place",
+    "rotate in place",
+    "spin on the spot",
+    "turn without moving away",
+    "yaw left",
+    "keep turning left",
+    "twirl around",
+    "rotate your body to the left"
+  ],
+  "hop": [
+    "hop: keep all feet off the ground as much as possible",
+    "hop around",
+    "jump",
+    "jump repeatedly",
+    "keep jumping",
+    "spring off the floor",
+    "bounce up and down",
+    "get all your feet in the air",
+    "be airborne",
+    "hop like a rabbit",
+    "do little jumps",
+    "lift every foot off the ground"
+  ]
+}

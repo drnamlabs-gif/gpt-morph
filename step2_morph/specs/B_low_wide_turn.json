@@ -1,0 +1,35 @@
+{
+ "name": "B_low_wide_turn",
+ "prompt": "a low robot with a wide body and short legs that turns left on the spot",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "yaw",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "travel",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "torso_W",
+   "op": ">=",
+   "value": 0.24
+  },
+  {
+   "descriptor": "mean_leg_len",
+   "op": "<=",
+   "value": 0.15
+  },
+  {
+   "descriptor": "stand_z",
+   "op": "<=",
+   "value": 0.2
+  }
+ ],
+ "reasoning": "Wide body and short legs are enforced via morphology constraints, while high yaw weight and negative travel weight encourage turning on the spot.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

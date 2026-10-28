@@ -1,0 +1,30 @@
+{
+ "name": "right_08",
+ "prompt": "Going right, sideways: that is the task. Use four legs.",
+ "kind": "reordered",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -2
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies moving right (positive dy) and penalizes forward motion and turning to ensure a pure sideways gait, while explicitly requiring four legs.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

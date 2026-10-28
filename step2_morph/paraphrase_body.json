@@ -1,0 +1,19 @@
+{
+ "_note": "Written before any compile. Same behaviour ('walks sideways to the right'), different bodies, to test whether the compiler reads the body from the text or defaults to 4 legs. 'legs' = the set of leg counts the spec must admit among {2,4,6} (all three = the text says nothing about leg count, so no leg constraint is allowed). 'need' = descriptors that must carry a constraint in the given direction ('min' = >= or ==, 'max' = <= or ==). kind 'probe' = body the generator cannot build; not scored, we only record what the compiler does.",
+ "items": [
+  {"kind": "count", "text": "a six-legged robot that walks sideways to the right", "legs": [6]},
+  {"kind": "count", "text": "a two-legged robot that walks sideways to the right", "legs": [2]},
+  {"kind": "count-word", "text": "a hexapod that walks sideways to the right", "legs": [6]},
+  {"kind": "count-word", "text": "a biped that walks sideways to the right", "legs": [2]},
+  {"kind": "count-implicit", "text": "an insect-like robot that walks sideways to the right", "legs": [6]},
+  {"kind": "count-implicit", "text": "a robot with three pairs of legs that walks sideways to the right", "legs": [6]},
+  {"kind": "no-body", "text": "a robot that walks sideways to the right", "legs": [2, 4, 6]},
+  {"kind": "no-body", "text": "walk sideways to the right", "legs": [2, 4, 6]},
+  {"kind": "shape", "text": "a robot with very long legs that walks sideways to the right", "legs": [2, 4, 6], "need": {"mean_leg_len": "min"}},
+  {"kind": "shape", "text": "a low, flat robot with short stubby legs that walks sideways to the right", "legs": [2, 4, 6], "need": {"mean_leg_len": "max"}},
+  {"kind": "shape", "text": "a light robot, as light as possible, that walks sideways to the right", "legs": [2, 4, 6], "need": {"mass": "max"}},
+  {"kind": "vietnamese", "text": "robot sáu chân đi ngang sang bên phải", "legs": [6]},
+  {"kind": "probe", "text": "an eight-legged spider robot that walks sideways to the right"},
+  {"kind": "probe", "text": "a three-legged robot that walks sideways to the right"}
+ ]
+}

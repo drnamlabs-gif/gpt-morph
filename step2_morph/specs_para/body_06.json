@@ -1,0 +1,22 @@
+{
+ "name": "body_06",
+ "prompt": "a robot that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "abs_dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [],
+ "reasoning": "High weight on absolute lateral displacement encourages sideways walking, while negative weights on forward motion and yaw suppress forward progress and turning.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

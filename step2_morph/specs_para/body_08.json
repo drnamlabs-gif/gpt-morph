@@ -1,0 +1,33 @@
+{
+ "name": "body_08",
+ "prompt": "a robot with very long legs that walks sideways to the right",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": -10.0
+  },
+  {
+   "descriptor": "dx",
+   "weight": 0.0
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -5.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "mean_leg_len",
+   "op": ">=",
+   "value": 0.4
+  },
+  {
+   "descriptor": "max_leg_len",
+   "op": ">=",
+   "value": 0.4
+  }
+ ],
+ "reasoning": "High negative weight on dy penalizes rightward movement, while long legs are required for the 'very long' morphology constraint.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

@@ -1,0 +1,30 @@
+{
+ "name": "right_04",
+ "prompt": "a robot with two pairs of legs that shuffles rightward like a crab",
+ "kind": "lexical",
+ "compiler": "qwen3.6:latest",
+ "behaviour": [
+  {
+   "descriptor": "dy",
+   "weight": 10.0
+  },
+  {
+   "descriptor": "abs_dx",
+   "weight": -5.0
+  },
+  {
+   "descriptor": "abs_yaw",
+   "weight": -2.0
+  }
+ ],
+ "morphology": [
+  {
+   "descriptor": "n_legs",
+   "op": "==",
+   "value": 4
+  }
+ ],
+ "reasoning": "The request specifies four legs (two pairs) and a rightward shuffling motion, which corresponds to positive dy displacement while minimizing forward movement and rotation.",
+ "validation_errors": [],
+ "repair_attempts": []
+}

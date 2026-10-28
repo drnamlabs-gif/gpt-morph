@@ -1,0 +1,3065 @@
+{
+ "train_paraphrases_per_behaviour": 12,
+ "n_test": 25,
+ "R1": {
+  "accuracy": {
+   "near": 1.0,
+   "far": 0.4666666666666667,
+   "all": 0.68
+  },
+  "tests": [
+   {
+    "text": "walk ahead",
+    "label": "forward",
+    "kind": "near",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move forward",
+    "label": "forward",
+    "kind": "near",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "go straight in front of you",
+    "label": "forward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "advance toward the front",
+    "label": "forward",
+    "kind": "far",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "head onward, nose first",
+    "label": "forward",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "walk backwards",
+    "label": "backward",
+    "kind": "near",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move backward",
+    "label": "backward",
+    "kind": "near",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "reverse",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "retreat",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "back away from where you are facing",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "walk sideways",
+    "label": "sideways",
+    "kind": "near",
+    "executed": "sideways",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move to the left side",
+    "label": "sideways",
+    "kind": "near",
+    "executed": "sideways",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "shuffle left like a crab",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "strafe left",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "slide over to your left without turning",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "turn left",
+    "label": "turn_left",
+    "kind": "near",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "rotate left in place",
+    "label": "turn_left",
+    "kind": "near",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "spin counterclockwise",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "sideways",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "pivot around without going anywhere",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "sideways",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "do a full circle on the spot",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "hop",
+    "label": "hop",
+    "kind": "near",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "jump off the ground",
+    "label": "hop",
+    "kind": "near",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "bounce",
+    "label": "hop",
+    "kind": "far",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "leap like a frog",
+    "label": "hop",
+    "kind": "far",
+    "executed": "backward",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "spend as much time airborne as you can",
+    "label": "hop",
+    "kind": "far",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   }
+  ],
+  "probes": [
+   {
+    "text": "walk sideways to the right",
+    "intended": "walk right (never trained)",
+    "executed": "sideways",
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw_deg": -33.478126567999155
+   },
+   {
+    "text": "turn right on the spot",
+    "intended": "turn right (never trained)",
+    "executed": "turn_left",
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw_deg": 1346.55196309684
+   },
+   {
+    "text": "stand still and do not move",
+    "intended": "stand still (never trained)",
+    "executed": "hop",
+    "dx": -2.3120762527701784,
+    "dy": 0.251006946994318,
+    "yaw_deg": 40.58417214974298
+   },
+   {
+    "text": "walk forward while turning left",
+    "intended": "forward + turn left (composition)",
+    "executed": "forward",
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw_deg": -12.209558442682996
+   },
+   {
+    "text": "do not walk backward",
+    "intended": "negation of backward",
+    "executed": "backward",
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw_deg": -22.23358168973364
+   }
+  ]
+ },
+ "R12": {
+  "accuracy": {
+   "near": 0.9,
+   "far": 0.8666666666666667,
+   "all": 0.88
+  },
+  "tests": [
+   {
+    "text": "walk ahead",
+    "label": "forward",
+    "kind": "near",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move forward",
+    "label": "forward",
+    "kind": "near",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "go straight in front of you",
+    "label": "forward",
+    "kind": "far",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "advance toward the front",
+    "label": "forward",
+    "kind": "far",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "head onward, nose first",
+    "label": "forward",
+    "kind": "far",
+    "executed": "forward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "walk backwards",
+    "label": "backward",
+    "kind": "near",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move backward",
+    "label": "backward",
+    "kind": "near",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "reverse",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "retreat",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "back away from where you are facing",
+    "label": "backward",
+    "kind": "far",
+    "executed": "backward",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "walk sideways",
+    "label": "sideways",
+    "kind": "near",
+    "executed": "sideways",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "move to the left side",
+    "label": "sideways",
+    "kind": "near",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "shuffle left like a crab",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "sideways",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "strafe left",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "slide over to your left without turning",
+    "label": "sideways",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": false,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "turn left",
+    "label": "turn_left",
+    "kind": "near",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "rotate left in place",
+    "label": "turn_left",
+    "kind": "near",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "spin counterclockwise",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "pivot around without going anywhere",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "do a full circle on the spot",
+    "label": "turn_left",
+    "kind": "far",
+    "executed": "turn_left",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "hop",
+    "label": "hop",
+    "kind": "near",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "jump off the ground",
+    "label": "hop",
+    "kind": "near",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "bounce",
+    "label": "hop",
+    "kind": "far",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "leap like a frog",
+    "label": "hop",
+    "kind": "far",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   },
+   {
+    "text": "spend as much time airborne as you can",
+    "label": "hop",
+    "kind": "far",
+    "executed": "hop",
+    "correct": true,
+    "dist_to_nearest_champion": 0.0
+   }
+  ],
+  "probes": [
+   {
+    "text": "walk sideways to the right",
+    "intended": "walk right (never trained)",
+    "executed": "sideways",
+    "dx": -0.11047602629525045,
+    "dy": 2.0138531299991325,
+    "yaw_deg": -33.478126567999155
+   },
+   {
+    "text": "turn right on the spot",
+    "intended": "turn right (never trained)",
+    "executed": "turn_left",
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw_deg": 1346.55196309684
+   },
+   {
+    "text": "stand still and do not move",
+    "intended": "stand still (never trained)",
+    "executed": "turn_left",
+    "dx": 0.03779371723499894,
+    "dy": 0.08413186788712271,
+    "yaw_deg": 1346.55196309684
+   },
+   {
+    "text": "walk forward while turning left",
+    "intended": "forward + turn left (composition)",
+    "executed": "forward",
+    "dx": 2.984399623702455,
+    "dy": 0.1768091658695789,
+    "yaw_deg": -12.209558442682996
+   },
+   {
+    "text": "do not walk backward",
+    "intended": "negation of backward",
+    "executed": "backward",
+    "dx": -2.810123325397167,
+    "dy": 0.3707547292005185,
+    "yaw_deg": -22.23358168973364
+   }
+  ]
+ },
+ "MLP": [
+  {
+   "accuracy": {
+    "near": 0.6,
+    "far": 0.4,
+    "all": 0.48
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.1805492914949667
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.22710715771766482
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.35004453682401876
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24465236204536123
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5624713833262437
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2828391895239967
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.26365880572993433
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.35061926896251566
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.852450854843638
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5625397875849965
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.7944786579838942
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5239033164871592
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6111941764728055
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.9104334112091093
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6474238886203593
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2679138658586482
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.21576138272359996
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "forward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5214049761236234
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.7951147116651173
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.937741564607092
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2065436660243612
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2581882264178198
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2639790555483939
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.3060272286669219
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21332897870731443
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.5779321116687368,
+     "dy": 1.5909925035074075,
+     "yaw_deg": -41.75716042494067
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.028339743231668303,
+     "dy": 0.12977470870925065,
+     "yaw_deg": 524.1604367199905
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "backward",
+     "dx": -0.25348973785579454,
+     "dy": -0.19272827253546596,
+     "yaw_deg": 124.52244041524672
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "forward",
+     "dx": 0.5538605989688763,
+     "dy": 0.2517413008796662,
+     "yaw_deg": -204.815875593966
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -1.2084430183422752,
+     "dy": -0.03716742909615131,
+     "yaw_deg": 5.487903544840511
+    }
+   ],
+   "seed": 0,
+   "final_train_mse": 0.0038646035827696323
+  },
+  {
+   "accuracy": {
+    "near": 0.5,
+    "far": 0.26666666666666666,
+    "all": 0.36
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.18688500862761093
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.22512695117089213
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.3619126490638937
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21694343644598965
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5549883688015019
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2796126933735882
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24901333412146706
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.3506885391855126
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.8247516951000082
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5209141905732935
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.8176203115523981
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.503794654683902
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.618161877632946
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.911215604603098
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6217998058967009
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.27970768789687095
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.23603206077571215
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5726847234168725
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.7797188126497401
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.9810611255884705
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2052920334743352
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.26124511643149073
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2876754564373695
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.31431484411477306
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21532905284768877
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": 0.05136397232227768,
+     "dy": 1.2425784824709525,
+     "yaw_deg": -125.93876268184667
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.04195852248975013,
+     "dy": 0.1013059981869909,
+     "yaw_deg": 546.857452908559
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": -0.13748947247835056,
+     "dy": -0.1632266823508517,
+     "yaw_deg": 133.03611816162223
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "forward",
+     "dx": 0.428496581212217,
+     "dy": 0.39993470307206586,
+     "yaw_deg": -178.47608389682304
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -1.3876927037489895,
+     "dy": 0.007998914157826298,
+     "yaw_deg": -6.191849737417333
+    }
+   ],
+   "seed": 1,
+   "final_train_mse": 0.003525524167343974
+  },
+  {
+   "accuracy": {
+    "near": 0.7,
+    "far": 0.26666666666666666,
+    "all": 0.44
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.17545438759102322
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.23305448666225184
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.34155999008582116
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2306179890622507
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5462479380683253
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.27498063562728303
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24546767665739697
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.32691075646115336
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.8225494735261113
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5333630497510266
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.835415720975468
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5290347852397331
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6121235971351682
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.9113022969759536
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6282937911108225
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.27216049331340364
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.20606512406072516
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.548489136159932
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.8008218342868272
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.9448248608257033
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2088128059444958
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.27845648856283917
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2746219273577215
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.3024828858333839
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21851627190157843
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.02322095783323882,
+     "dy": 1.2777561801626984,
+     "yaw_deg": -103.93209191302313
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.1295262806123852,
+     "dy": 0.07494820803068515,
+     "yaw_deg": 474.83329295147826
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "hop",
+     "dx": -0.18983722466666175,
+     "dy": -0.10850228708880309,
+     "yaw_deg": 149.1420071245651
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "forward",
+     "dx": 0.5791034180034758,
+     "dy": 0.4230910575490006,
+     "yaw_deg": -177.64328403245113
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -1.5242337030957378,
+     "dy": 0.1726874493007269,
+     "yaw_deg": -7.471847978313628
+    }
+   ],
+   "seed": 2,
+   "final_train_mse": 0.0032299773301929235
+  },
+  {
+   "accuracy": {
+    "near": 0.5,
+    "far": 0.3333333333333333,
+    "all": 0.4
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.17764046812648424
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.23563038698777541
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.33947468336882825
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.22503383678719166
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5518249788180403
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2706764006338034
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24510173267435933
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.3488323225085643
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.8259037804362741
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5298333979132511
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.8002686034351489
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5463519658276996
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6248637825738185
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.9160003611292117
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6319474782654091
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2654191151147709
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.23328873827867627
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5624767934288264
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.78750917847163
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.961070030132312
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.22002640897011325
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.2803509443637217
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.28641166500989446
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.31989698529491567
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21717900685991748
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.07231873653159282,
+     "dy": 1.4460451161423666,
+     "yaw_deg": -110.21351005417466
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.22566061885377064,
+     "dy": 0.0967894343421398,
+     "yaw_deg": 449.2416559404452
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": -0.1599359865508362,
+     "dy": -0.1515849306440769,
+     "yaw_deg": 126.39312069659964
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "forward",
+     "dx": 0.5143191170385498,
+     "dy": 0.4829943216875939,
+     "yaw_deg": -183.20010336491586
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -1.3999489979588042,
+     "dy": -0.07211466109429279,
+     "yaw_deg": 8.085094753118069
+    }
+   ],
+   "seed": 3,
+   "final_train_mse": 0.003619591938331723
+  },
+  {
+   "accuracy": {
+    "near": 0.7,
+    "far": 0.4,
+    "all": 0.52
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.18124803955657426
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24398686841908937
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.343817978510287
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21701676277911724
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.5429682627399359
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2825721175631235
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.24141891523755887
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.3406015985825953
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.8273048290734719
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5283241216117757
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.8258343106793743
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.5175330039415065
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6308781275141232
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.9229660030244193
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "hop",
+     "correct": false,
+     "dist_to_nearest_champion": 0.6422499872398868
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.28014966682540854
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2295861371198703
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "forward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.4956070977579374
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.7760769874096286
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": false,
+     "dist_to_nearest_champion": 0.9278003426162962
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.20750004767621058
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.24438078325082824
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.278623398563302
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.2996506020180178
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "backward",
+     "correct": false,
+     "dist_to_nearest_champion": 0.21638547007870076
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.07189920935967573,
+     "dy": 1.4095062558745324,
+     "yaw_deg": -82.05575353295109
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.04189526844790869,
+     "dy": -0.06708392745942807,
+     "yaw_deg": 413.76364703629105
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": -0.10999908248658076,
+     "dy": -0.18215455441892814,
+     "yaw_deg": 184.94444520254834
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "forward",
+     "dx": 0.5922466285880024,
+     "dy": 0.3518760546374704,
+     "yaw_deg": -197.3512815160806
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -1.4125899793344538,
+     "dy": 0.4717042691702198,
+     "yaw_deg": -26.078275679145804
+    }
+   ],
+   "seed": 4,
+   "final_train_mse": 0.003593530273064971
+  }
+ ],
+ "ROUTER": [
+  {
+   "accuracy": {
+    "near": 1.0,
+    "far": 0.8666666666666667,
+    "all": 0.92
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -2.810123325397167,
+     "dy": 0.3707547292005185,
+     "yaw_deg": -22.23358168973364
+    }
+   ],
+   "seed": 0,
+   "final_train_ce": 0.0030652701389044523
+  },
+  {
+   "accuracy": {
+    "near": 1.0,
+    "far": 0.8666666666666667,
+    "all": 0.92
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -2.810123325397167,
+     "dy": 0.3707547292005185,
+     "yaw_deg": -22.23358168973364
+    }
+   ],
+   "seed": 1,
+   "final_train_ce": 0.00480592530220747
+  },
+  {
+   "accuracy": {
+    "near": 1.0,
+    "far": 0.8666666666666667,
+    "all": 0.92
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -2.810123325397167,
+     "dy": 0.3707547292005185,
+     "yaw_deg": -22.23358168973364
+    }
+   ],
+   "seed": 2,
+   "final_train_ce": 0.0038683940656483173
+  },
+  {
+   "accuracy": {
+    "near": 1.0,
+    "far": 0.8666666666666667,
+    "all": 0.92
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -2.810123325397167,
+     "dy": 0.3707547292005185,
+     "yaw_deg": -22.23358168973364
+    }
+   ],
+   "seed": 3,
+   "final_train_ce": 0.004860356450080872
+  },
+  {
+   "accuracy": {
+    "near": 1.0,
+    "far": 0.8666666666666667,
+    "all": 0.92
+   },
+   "tests": [
+    {
+     "text": "walk ahead",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move forward",
+     "label": "forward",
+     "kind": "near",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "go straight in front of you",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "advance toward the front",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "head onward, nose first",
+     "label": "forward",
+     "kind": "far",
+     "executed": "forward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk backwards",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move backward",
+     "label": "backward",
+     "kind": "near",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "reverse",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "retreat",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "back away from where you are facing",
+     "label": "backward",
+     "kind": "far",
+     "executed": "backward",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "walk sideways",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "move to the left side",
+     "label": "sideways",
+     "kind": "near",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "shuffle left like a crab",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "sideways",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "strafe left",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "slide over to your left without turning",
+     "label": "sideways",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": false,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "turn left",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "rotate left in place",
+     "label": "turn_left",
+     "kind": "near",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spin counterclockwise",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "pivot around without going anywhere",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "do a full circle on the spot",
+     "label": "turn_left",
+     "kind": "far",
+     "executed": "turn_left",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "hop",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "jump off the ground",
+     "label": "hop",
+     "kind": "near",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "bounce",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "leap like a frog",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    },
+    {
+     "text": "spend as much time airborne as you can",
+     "label": "hop",
+     "kind": "far",
+     "executed": "hop",
+     "correct": true,
+     "dist_to_nearest_champion": 0.0
+    }
+   ],
+   "probes": [
+    {
+     "text": "walk sideways to the right",
+     "intended": "walk right (never trained)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "turn right on the spot",
+     "intended": "turn right (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "stand still and do not move",
+     "intended": "stand still (never trained)",
+     "executed": "turn_left",
+     "dx": 0.03779371723499894,
+     "dy": 0.08413186788712271,
+     "yaw_deg": 1346.55196309684
+    },
+    {
+     "text": "walk forward while turning left",
+     "intended": "forward + turn left (composition)",
+     "executed": "sideways",
+     "dx": -0.11047602629525045,
+     "dy": 2.0138531299991325,
+     "yaw_deg": -33.478126567999155
+    },
+    {
+     "text": "do not walk backward",
+     "intended": "negation of backward",
+     "executed": "backward",
+     "dx": -2.810123325397167,
+     "dy": 0.3707547292005185,
+     "yaw_deg": -22.23358168973364
+    }
+   ],
+   "seed": 4,
+   "final_train_ce": 0.0040806191973388195
+  }
+ ],
+ "ROUTER_summary": {
+  "mean": {
+   "all": 0.9200000000000002,
+   "near": 1.0,
+   "far": 0.8666666666666668
+  },
+  "sd": {
+   "all": 1.2412670766236366e-16,
+   "near": 0.0,
+   "far": 1.2412670766236366e-16
+  }
+ },
+ "MLP_summary": {
+  "mean": {
+   "all": 0.44000000000000006,
+   "near": 0.6,
+   "far": 0.3333333333333333
+  },
+  "sd": {
+   "all": 0.06324555320336758,
+   "near": 0.09999999999999998,
+   "far": 0.06666666666666668
+  },
+  "median_dist_to_champion": 0.3406015985825953
+ }
+}
